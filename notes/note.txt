@@ -1,0 +1,45 @@
+day 1) Run the model
+http://127.0.0.1:8000/api/users
+
+{"content":[{"avatarName":"avatar-20200806032259161.png","avatarPath":"/Users/jie/Documents/work/me/admin/eladmin/~/avatar/avatar-20200806032259161.png","createTime":"2018-08-23 09:11:56","dept":{"id":2,"name":"研发部"},"email":"201507802@qq.com","enabled":true,"gender":"男","id":1,"jobs":[{"id":11,"name":"全栈开发"}],"nickName":"管理员","phone":"18888888888","pwdResetTime":"2020-05-03 16:38:31","roles":[{"dataScope":"全部","id":1,"level":1,"name":"超级管理员"}],"updateBy":"admin","updateTime":"2020-09-05 10:43:31","username":"admin"},{"createBy":"admin","createTime":"2020-05-05 11:15:49","dept":{"id":2,"name":"研发部"},"email":"231@qq.com","enabled":true,"gender":"男","id":2,"jobs":[{"id":12,"name":"软件测试"}],"nickName":"测试","phone":"19999999999","roles":[{"dataScope":"本级","id":2,"level":2,"name":"普通用户"}],"updateBy":"admin","updateTime":"2020-09-05 10:43:38","username":"test"}],"totalElements":2}
+
+Response Headers
+Cache-Control	no-cache, no-store, max-age=0, must-revalidate
+Connection	keep-alive
+Content-Length	954
+Content-Type	application/json;charset=UTF-8
+Date	Fri, 21 Jul 2023 21:42:23 GMT
+Expires	0
+Keep-Alive	timeout=60
+Pragma	no-cache
+Vary	Origin, Access-Control-Request-Method, Access-Control-Request-Headers
+X-Content-Type-Options	nosniff
+X-XSS-Protection	1; mode=block
+
+Request Headers:
+Accept	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Encoding	gzip, deflate, br
+Accept-Language	en-US,en;q=0.5
+Connection	keep-alive
+Host	127.0.0.1:8000
+Sec-Fetch-Dest	document
+Sec-Fetch-Mode	navigate
+Sec-Fetch-Site	none
+Sec-Fetch-User	?1
+Upgrade-Insecure-Requests	1
+User-Agent	Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+
+java  path
+
+https://javahelps.com/install-oracle-jdk-8-on-linux
+
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_202/bin/java" 0
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_202/bin/javac" 0
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_202/bin/java
+sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_202/bin/javac
+
+deploy and maintance
+https://eladmin.vip/pages/010401/
+nohup java -jar eladmin-system-2.7.jar --spring.profiles.active=prod > nohup.out 2>&1 &
+
+
